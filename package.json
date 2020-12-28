@@ -1,0 +1,56 @@
+{
+  "name": "bankInfo",
+  "version": "0.0.1",
+  "description": "通过银行卡号查询卡bin信息",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "start": "dumi dev --port=3000",
+    "build:docs": "dumi build",
+    "build": "father-build && node ./scripts/clean-build.js",
+    "build:publish": "npm run build && npm publish",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:w": "umi-test uniqueArr.test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "keywords": [
+    "bank",
+    "bankNo",
+    "bankName",
+    "bankCode",
+    "cardType",
+    "cardTypeName"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/long-zhuge/bankInfo"
+  },
+  "devDependencies": {
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.0.5",
+    "del": "^5.1.0",
+    "dumi": "1.0.34",
+    "father-build": "^1.17.2",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "yorkie": "^2.0.0",
+    "eslint": "^4.14.0",
+    "babel-eslint": "^8.1.2",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-compat": "^2.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "eslint-plugin-react": "^7.0.1"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "license": "ISC"
+}
